@@ -34,7 +34,7 @@ export default function Home() {
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1566669702279-e8b610c8e359"
+            src="https://images.unsplash.com/photo-1473594659356-a404044aa2c2?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="African Healthcare"
             fill
             className="object-cover"
@@ -68,7 +68,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               Empowering women through comprehensive healthcare services and support. 
-              We're dedicated to providing exceptional care and promoting health equity in Rwanda.
+              We&apos;re dedicated to providing exceptional care and promoting health equity in Rwanda.
             </motion.p>
             <motion.div 
               className="space-y-3 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row"
@@ -131,13 +131,13 @@ export default function Home() {
                 className="text-3xl sm:text-4xl font-bold text-gray-900"
                 variants={fadeInUp}
               >
-                Transforming Women's Healthcare in Rwanda
+                Transforming Women&apos;s Healthcare in Rwanda
               </motion.h3>
               <motion.p 
                 className="text-lg text-gray-600 leading-relaxed"
                 variants={fadeInUp}
               >
-                Founded in 2020, Rwanda Rainbow Clinics emerged from a vision to address the critical gaps in women's healthcare across Rwanda. Our journey began with a simple yet powerful mission: to ensure every woman has access to quality, compassionate healthcare services.
+                Founded in 2020, Rwanda Rainbow Clinics emerged from a vision to address the critical gaps in women&apos;s healthcare across Rwanda. Our journey began with a simple yet powerful mission: to ensure every woman has access to quality, compassionate healthcare services.
               </motion.p>
               <motion.div 
                 className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8"
@@ -209,7 +209,7 @@ export default function Home() {
               {
                 title: "Women's Health",
                 description: "Specialized care for women at every stage of life.",
-                image: "https://images.unsplash.com/photo-1638202993928-7d113c25e3e1?auto=format&fit=crop&q=80"
+                image: "https://images.unsplash.com/photo-1509099955921-f0b4ed0c175c?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               },
               {
                 title: "Support Services",
