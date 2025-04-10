@@ -59,8 +59,9 @@ export function Navigation() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex-shrink-0 flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-pink-500" />
-              <span className="text-xl font-bold text-white">Rwanda Rainbow Clinics</span>
+              {/* <Heart className="h-8 w-8 text-pink-500" /> */}
+              <img src="/logo.png" className="h-12 w-10 text-pink-500" alt="" />
+              <span className="text-xl font-bold text-white">Rwanda Prenatal Loss Project</span>
             </Link>
           </motion.div>
 

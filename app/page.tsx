@@ -46,47 +46,46 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-sky-900/90 via-sky-900/40 to-transparent"></div>
         </div>
 
-        <motion.div 
+        <motion.div
           className="relative h-screen flex items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="ml-[5%] sm:ml-[10%] max-w-[90%] sm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] relative z-10 px-4 sm:px-0 pt-16 sm:pt-0">
-            <motion.h1 
+          <div className="ml-[5%] sm:ml-[10%] max-w-[90%] sm:max-w-[50%] md:max-w-[40%] lg:max-w-[40%] relative z-10 px-4 sm:px-0 pt-16 sm:pt-0">
+            <motion.h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Rwanda Rainbow Clinics
+              Rwanda Prenatal Loss Project
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-base sm:text-lg md:text-xl text-sky-100 mb-6 sm:mb-8 leading-relaxed drop-shadow-md"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Empowering women through comprehensive healthcare services and support. 
-              We&apos;re dedicated to providing exceptional care and promoting health equity in Rwanda.
+              We strive to be Rwanda’s leading center of excellence in perinatal loss care, research, and advocacy, providing compassionate, multidisciplinary support to bereaved families and advancing maternal-fetal health outcomes.
             </motion.p>
-            <motion.div 
+            <motion.div
               className="space-y-3 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button 
-                size="lg" 
-                className="bg-sky-600 text-white hover:bg-sky-700 transition-colors duration-300 w-full sm:w-auto" 
+              <Button
+                size="lg"
+                className="bg-sky-600 text-white hover:bg-sky-700 transition-colors duration-300 w-full sm:w-auto"
                 asChild
               >
                 <Link href="/contact">Book Appointment</Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="bg-white/10 border-white text-white hover:bg-white/20 transition-colors duration-300 w-full sm:w-auto" 
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white/10 border-white text-white hover:bg-white/20 transition-colors duration-300 w-full sm:w-auto"
                 asChild
               >
                 <Link href="/about">Learn More</Link>
@@ -97,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <motion.section 
+      <motion.section
         ref={aboutRef}
         initial="hidden"
         animate={aboutInView ? "visible" : "hidden"}
@@ -107,12 +106,12 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden"
               variants={fadeInUp}
             >
               <Image
-                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982"
+                src="/image.png"
                 alt="Healthcare in Rwanda"
                 fill
                 className="object-cover"
@@ -120,53 +119,53 @@ export default function Home() {
               />
             </motion.div>
             <div className="space-y-6">
-              <motion.div 
+              <motion.div
                 className="inline-block"
                 variants={fadeInUp}
               >
                 <h2 className="text-sky-600 font-semibold text-lg mb-2">Our Story</h2>
                 <div className="h-1 w-20 bg-sky-600 rounded"></div>
               </motion.div>
-              <motion.h3 
+              <motion.h3
                 className="text-3xl sm:text-4xl font-bold text-gray-900"
                 variants={fadeInUp}
               >
                 Transforming Women&apos;s Healthcare in Rwanda
               </motion.h3>
-              <motion.p 
+              <motion.p
                 className="text-lg text-gray-600 leading-relaxed"
                 variants={fadeInUp}
               >
-                Founded in 2020, Rwanda Rainbow Clinics emerged from a vision to address the critical gaps in women&apos;s healthcare across Rwanda. Our journey began with a simple yet powerful mission: to ensure every woman has access to quality, compassionate healthcare services.
+                Founded in 2024, Rwanda Rainbow Clinic was born from a deep commitment to supporting families experiencing pregnancy loss. Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families while advocating for better care and awareness.
               </motion.p>
-              <motion.div 
+              <motion.div
                 className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8"
                 variants={fadeInUp}
               >
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">Our Mission</h4>
                   <p className="text-gray-600">
-                    To provide accessible, comprehensive healthcare services that empower women and strengthen communities across Rwanda.
+                    To deliver holistic, evidence-based care through medical and psychological support, community awareness, research, healthcare provider training, and policy advocacy,
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">Our Vision</h4>
                   <p className="text-gray-600">
-                    A Rwanda where every woman has access to quality healthcare, support, and the resources needed to live a healthy life.
+                    Ensure every family receives respectful, dignified, and culturally sensitive care while working to reduce preventable stillbirths in Rwanda.
                   </p>
                 </div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8"
                 variants={fadeInUp}
               >
                 {[
-                  { number: "5K+", label: "Women Served" },
+                  { number: "560", label: "Women Served" },
                   { number: "98%", label: "Patient Satisfaction" },
                   { number: "24/7", label: "Support Available" },
                   { number: "15+", label: "Expert Staff" }
                 ].map((stat, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     className="text-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -184,7 +183,7 @@ export default function Home() {
       </motion.section>
 
       {/* Services Section */}
-      <motion.section 
+      <motion.section
         ref={servicesRef}
         initial="hidden"
         animate={servicesInView ? "visible" : "hidden"}
@@ -193,7 +192,7 @@ export default function Home() {
         className="py-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 
+          <motion.h2
             className="text-3xl font-bold text-center mb-12"
             variants={fadeInUp}
           >
@@ -245,7 +244,7 @@ export default function Home() {
       </motion.section>
 
       {/* Testimonials Section */}
-      <motion.section 
+      <motion.section
         ref={testimonialsRef}
         initial="hidden"
         animate={testimonialsInView ? "visible" : "hidden"}
@@ -254,7 +253,7 @@ export default function Home() {
         className="bg-gray-50 py-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 
+          <motion.h2
             className="text-3xl font-bold text-center mb-12"
             variants={fadeInUp}
           >
