@@ -43,12 +43,12 @@ export function Navigation() {
   return (
     <motion.nav
       variants={{
-        visible: { y: 0, backgroundColor: scrollY.get() > 50 ? "rgba(0, 0, 0, 0.8)" : "transparent" },
+        visible: { y: 0, backgroundColor: scrollY.get() > 50 ? "rgba(0, 0, 0, 0.8)" : "rgba(0,0,0,0.6)" },
         hidden: { y: "-100%" },
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed w-full z-50 backdrop-blur-md"
+      className="fixed w-full z-50 backdrop-blur-md bg-black/60"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
