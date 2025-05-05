@@ -73,31 +73,48 @@ export default function Doctors() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-sky-900 to-sky-800">
-        <div className="absolute inset-0 overflow-hidden">
+      <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
+        <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef"
-            alt="Medical Team"
+            src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="African Healthcare"
             fill
-            className="object-cover opacity-20"
+            className="object-cover"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            quality={100}
+            style={{ objectPosition: 'center' }}
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-sky-900/90 via-sky-900/40 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+
+        <motion.div
+          className="relative h-screen flex items-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="mx-auto max-w-2xl px-4 text-center relative z-10 pt-16 sm:pt-0">
+
+            <motion.h1
+              className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight text-white drop-shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               Meet Our Expert Doctors
-            </h1>
-            <p className="text-xl text-sky-100 max-w-3xl mx-auto">
+            </motion.h1>
+
+            <motion.p
+              className="text-base sm:text-lg md:text-xl text-sky-100 mb-6 sm:mb-8 leading-relaxed drop-shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
               Schedule a consultation with our experienced healthcare professionals dedicated to women's health.
-            </p>
-          </motion.div>
-        </div>
+            </motion.p>
+          </div>
+        </motion.div>
       </section>
 
       {/* Doctors Grid */}
@@ -135,7 +152,7 @@ export default function Doctors() {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
                   <p className="text-sky-600 font-medium mb-2">{doctor.title}</p>
                   <p className="text-gray-600 mb-4">Specializing in {doctor.specialization}</p>
-                  
+
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center text-gray-600">
                       <MapPin className="h-4 w-4 mr-2" />
@@ -161,7 +178,7 @@ export default function Doctors() {
                     </div>
                   </div>
 
-                  <Button 
+                  <Button
                     className="w-full bg-sky-600 hover:bg-sky-700"
                     asChild
                   >
@@ -183,7 +200,7 @@ export default function Doctors() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Doctors?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our team of experienced healthcare professionals is dedicated to providing 
+              Our team of experienced healthcare professionals is dedicated to providing
               exceptional care with a focus on women's health and well-being.
             </p>
           </div>
