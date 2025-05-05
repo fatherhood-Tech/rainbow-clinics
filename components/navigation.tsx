@@ -34,9 +34,9 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { type: "dropdown", label: "Services", items: services },
-    { href: "/projects/prenatal-loss", label: "Prenatal Loss Services" },
-    { href: "/projects/health-equity", label: "Health Equity" },
-    { href: "/news", label: "News" },
+    // { href: "/projects/prenatal-loss", label: "Prenatal Loss Services" },
+    // { href: "/projects/health-equity", label: "Health Equity" },
+    { href: "/doctors", label: "Doctors" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -61,7 +61,7 @@ export function Navigation() {
             <Link href="/" className="flex-shrink-0 flex items-center space-x-2">
               {/* <Heart className="h-8 w-8 text-pink-500" /> */}
               <img src="/logo.png" className="h-12 w-10 text-pink-500" alt="" />
-              <span className="text-xl font-bold text-white">Rwanda Prenatal Loss Project</span>
+              <span className="text-xl font-bold text-white">Rwanda Perinatal Loss Project</span>
             </Link>
           </motion.div>
 

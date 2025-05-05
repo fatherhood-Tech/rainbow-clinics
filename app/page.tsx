@@ -59,7 +59,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Rwanda Prenatal Loss Project
+              Rwanda Perinatal <br /> Loss Project
             </motion.h1>
             <motion.p
               className="text-base sm:text-lg md:text-xl text-sky-100 mb-6 sm:mb-8 leading-relaxed drop-shadow-md"
@@ -136,7 +136,7 @@ export default function Home() {
                 className="text-lg text-gray-600 leading-relaxed"
                 variants={fadeInUp}
               >
-                Founded in 2024, Rwanda Rainbow Clinic was born from a deep commitment to supporting families experiencing pregnancy loss. Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families while advocating for better care and awareness.
+                Founded in 2024, Rwanda Perinatal Loss Project was born from a deep commitment to supporting families experiencing pregnancy loss. Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families while advocating for better care and awareness.
               </motion.p>
               <motion.div
                 className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8"
