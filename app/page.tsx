@@ -67,7 +67,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We strive to be Rwanda’s leading center of excellence in perinatal loss care, research, and advocacy, providing compassionate, multidisciplinary support to bereaved families and advancing maternal-fetal health outcomes.
+              We strive to be Rwanda's leading center of excellence in perinatal loss care, research, and advocacy, providing compassionate, multidisciplinary support to bereaved families and advancing maternal-fetal health outcomes.
             </motion.p>
             <motion.div
               className="space-y-3 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row"
@@ -102,85 +102,131 @@ export default function Home() {
         animate={aboutInView ? "visible" : "hidden"}
         variants={fadeInUp}
         transition={{ duration: 0.8 }}
-        className="py-24 bg-gradient-to-b from-sky-50 to-white"
+        className="py-28 bg-white"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+          {/* Top Story Block */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden"
+              className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-lg"
               variants={fadeInUp}
             >
               <Image
-                src="/image.png"
+                src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Healthcare in Rwanda"
                 fill
-                className="object-cover"
+                className="rounded-3xl object-cover w-full h-auto"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </motion.div>
-            <div className="space-y-6">
-              <motion.div
-                className="inline-block"
-                variants={fadeInUp}
-              >
-                <h2 className="text-sky-600 font-semibold text-lg mb-2">Our Story</h2>
-                <div className="h-1 w-20 bg-sky-600 rounded"></div>
-              </motion.div>
-              <motion.h3
-                className="text-3xl sm:text-4xl font-bold text-gray-900"
-                variants={fadeInUp}
-              >
+            <motion.div className="space-y-6" variants={fadeInUp}>
+              <span className="text-sky-600 text-sm font-semibold uppercase tracking-wider">Our Story</span>
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
                 Transforming Women&apos;s Healthcare in Rwanda
-              </motion.h3>
-              <motion.p
-                className="text-lg text-gray-600 leading-relaxed"
-                variants={fadeInUp}
-              >
-                Founded in 2024, Rwanda Perinatal Loss Project was born from a deep commitment to supporting families experiencing pregnancy loss. Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families while advocating for better care and awareness.
-              </motion.p>
+              </h2>
               <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8"
                 variants={fadeInUp}
+                className="space-y-4"
               >
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Our Mission</h4>
-                  <p className="text-gray-600">
-                    To deliver holistic, evidence-based care through medical and psychological support, community awareness, research, healthcare provider training, and policy advocacy,
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Our Vision</h4>
-                  <p className="text-gray-600">
-                    Ensure every family receives respectful, dignified, and culturally sensitive care while working to reduce preventable stillbirths in Rwanda.
-                  </p>
-                </div>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Founded in 2024, Rwanda Perinatal Loss Project was born from a deep commitment to supporting families experiencing pregnancy loss. Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families while advocating for better care and awareness.
+                </p>
+                <Link
+                  href="/about"
+                  className="inline-block text-sky-600 hover:text-sky-800 font-medium underline underline-offset-4 transition-colors duration-300"
+                >
+                  Read More &rarr;
+                </Link>
               </motion.div>
-              <motion.div
-                className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8"
-                variants={fadeInUp}
-              >
-                {[
-                  { number: "560", label: "Women Served" },
-                  { number: "98%", label: "Patient Satisfaction" },
-                  { number: "24/7", label: "Support Available" },
-                  { number: "15+", label: "Expert Staff" }
-                ].map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    className="text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    <h4 className="text-3xl font-bold text-sky-600">{stat.number}</h4>
-                    <p className="text-gray-600">{stat.label}</p>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
+            </motion.div>
           </div>
+
+          {/* Stats Grid */}
+          {/* <motion.div
+            className="grid grid-cols-2 sm:grid-cols-4 gap-6"
+            variants={fadeInUp}
+          >
+            {[
+              { number: "560", label: "Women Served" },
+              { number: "98%", label: "Patient Satisfaction" },
+              { number: "24/7", label: "Support Available" },
+              { number: "15+", label: "Expert Staff" }
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                className="bg-white rounded-xl border border-gray-100 shadow-sm text-center py-6"
+                initial={{ opacity: 0, y: 20 }}
+                animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+              >
+                <h4 className="text-4xl font-bold text-sky-600">{stat.number}</h4>
+                <p className="text-gray-600 mt-1">{stat.label}</p>
+              </motion.div>
+            ))}
+          </motion.div> */}
         </div>
       </motion.section>
+
+       {/* Mission & Vision Section */}
+       <section className="relative bg-gradient-to-b from-sky-50 via-cyan-100 to-white pb-16 pt-20">
+        {/* Curve SVG Top */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            className="w-full h-[100px]"
+          >
+            <path
+              d="M0.00,49.98 C150.00,150.00 350.00,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style={{ stroke: "none", fill: "#ffff" }} // soft emerald/cyan
+            ></path>
+          </svg>
+        </div>
+
+        {/* Content */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-20 mt-16 ">
+          {[
+            {
+              title: "Our Mission",
+              icon: (
+                <path d="M13 16h-1v-4h-1m0-4h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+              ),
+              description:
+                "To deliver holistic, evidence-based care through medical and psychological support, community awareness, research, healthcare provider training, and policy advocacy.",
+            },
+            {
+              title: "Our Vision",
+              icon: (
+                <path d="M12 4.354a4 4 0 1 0 0 7.292M12 4.354a4 4 0 0 1 0 7.292M12 4.354V20" />
+              ),
+              description:
+                "Ensure every family receives respectful, dignified, and culturally sensitive care while working to reduce preventable stillbirths in Rwanda.",
+            },
+          ].map((item, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ scale: 1.02 }}
+              className="transition-all px-6 md:px-12 "
+            >
+              <div className="flex flex-col items-center space-y-6 ">
+                <div className="w-16 h-16 bg-sky-600 text-white flex items-center justify-center rounded-full shadow-lg">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    {item.icon}
+                  </svg>
+                </div>
+                <h4 className="text-3xl md:text-4xl font-extrabold tracking-tight text-sky-900">
+                  {item.title}
+                </h4>
+                <p className="text-sky-800 text-lg md:text-xl leading-relaxed font-light max-w-xl">
+                  {item.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
 
       {/* Services Section */}
       <motion.section

@@ -8,7 +8,59 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, Phone, Mail, Star, Heart } from "lucide-react";
 
+
 const doctors = [
+  {
+    id: "dr-marie-uwimana",
+    name: "Dr. Marie Uwimana",
+    title: "Obstetrics & Gynecology",
+    specialization: "High-Risk Pregnancy",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+    experience: "15+ years",
+    education: "University of Rwanda Medical School",
+    languages: ["English", "Kinyarwanda", "French"],
+    calendlyLink: "https://calendly.com/dr-marie-uwimana",
+    expertise: [
+      "Prenatal Care",
+      "High-Risk Pregnancy Management",
+      "Fetal Medicine",
+      "Maternal Health"
+    ]
+  },
+  {
+    id: "dr-sarah-mutesi",
+    name: "Dr. Sarah Mutesi",
+    title: "Maternal-Fetal Medicine",
+    specialization: "Perinatal Loss Care",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
+    experience: "12+ years",
+    education: "University of Nairobi Medical School",
+    languages: ["English", "Kinyarwanda", "Swahili"],
+    calendlyLink: "https://calendly.com/dr-sarah-mutesi",
+    expertise: [
+      "Perinatal Loss Support",
+      "Grief Counseling",
+      "Pregnancy After Loss",
+      "Family Planning"
+    ]
+  },
+  {
+    id: "dr-jean-mugisha",
+    name: "Dr. Jean Mugisha",
+    title: "Women's Health",
+    specialization: "Mental Health Support",
+    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
+    experience: "10+ years",
+    education: "Makerere University",
+    languages: ["English", "Kinyarwanda"],
+    calendlyLink: "https://calendly.com/dr-jean-mugisha",
+    expertise: [
+      "Mental Health Support",
+      "Pregnancy Counseling",
+      "Postpartum Care",
+      "Anxiety & Depression Management"
+    ]
+  },
   {
     id: "dr-marie-uwimana",
     name: "Dr. Marie Uwimana",

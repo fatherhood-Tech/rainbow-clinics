@@ -20,6 +20,17 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        myblue: '#7ba9c2',
+        chris: {
+          primary: '#8AA6A3',
+          secondary: '#127369',
+          dark: '#10403B'
+        },
+        brand: {
+          light: '#e0f2fe',
+          DEFAULT: '#090a0a',
+          dark: '#075985',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
