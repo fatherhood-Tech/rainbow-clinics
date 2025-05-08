@@ -162,7 +162,8 @@ export default function Services() {
       <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="done.jpg"
             alt="African Healthcare"
             fill
             className="object-cover"

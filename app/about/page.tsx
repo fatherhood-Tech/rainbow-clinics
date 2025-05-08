@@ -23,7 +23,8 @@ export default function About() {
       <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="NewReal.jpg"
             alt="African Healthcare"
             fill
             className="object-cover"
@@ -49,7 +50,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              About Rwanda Rainbow Clinics
+              About Rwanda Perinatal Loss Project
             </motion.h1>
 
             <motion.p
@@ -79,7 +80,7 @@ export default function About() {
               <motion.div variants={fadeInUp}>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Journey</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Founded in 2020, Rwanda Rainbow Clinics was born from a vision to address the critical
+                  Founded in 2020, Rwanda Perinatal Loss Projects was born from a vision to address the critical
                   gaps in women&apos;s healthcare across Rwanda. What began as a small clinic in Kigali has
                   grown into a network of healthcare facilities serving thousands of women annually.
                 </p>
@@ -108,7 +109,8 @@ export default function About() {
             </div>
             <motion.div variants={fadeInUp} className="relative h-[500px] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289"
+                // src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289"
+                src="./project.jpg"
                 alt="Healthcare in Rwanda"
                 fill
                 className="object-cover"
@@ -261,13 +263,14 @@ export default function About() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-6 w-6 text-sky-600" />
-                  <span className="text-gray-700">info@rwandarainbow.org</span>
+                  <span className="text-gray-700">info@rplp.org</span>
                 </div>
               </div>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1582719508461-905c673771fd"
+                // src="https://images.unsplash.com/photo-1582719508461-905c673771fd"
+                src="smile.jpg"
                 alt="Our Facility"
                 fill
                 className="object-cover"
