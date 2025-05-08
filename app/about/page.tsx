@@ -80,12 +80,12 @@ export default function About() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Journey</h2>
                 <p className="text-lg text-gray-600 mb-4">
                   Founded in 2020, Rwanda Rainbow Clinics was born from a vision to address the critical
-                  gaps in women's healthcare across Rwanda. What began as a small clinic in Kigali has
+                  gaps in women&apos;s healthcare across Rwanda. What began as a small clinic in Kigali has
                   grown into a network of healthcare facilities serving thousands of women annually.
                 </p>
                 <p className="text-lg text-gray-600">
                   Our founders, Dr. Marie Uwimana and Dr. Sarah Mutesi, combined their expertise in
-                  obstetrics and community health to create a healthcare model that puts women's needs
+                  obstetrics and community health to create a healthcare model that puts women&apos;s needs
                   at the center of everything we do.
                 </p>
               </motion.div>
@@ -188,7 +188,7 @@ export default function About() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Meet the dedicated professionals leading our mission to transform women's healthcare in Rwanda.
+              Meet the dedicated professionals leading our mission to transform women&apos;s healthcare in Rwanda.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -247,7 +247,7 @@ export default function About() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
               <p className="text-lg text-gray-600">
-                We're here to answer your questions and provide the care you need.
+                We&apos;re here to answer your questions and provide the care you need.
                 Contact us to schedule an appointment or learn more about our services.
               </p>
               <div className="space-y-4">
