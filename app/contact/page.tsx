@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <section>
                     <h2 className="text-3xl font-semibold mb-4">Our Partner Hospitals</h2>
                     <div className="h-[400px] w-full rounded-xl overflow-hidden shadow mb-6">
-                        <MapContainer
+                        {/* <MapContainer
                             center={[-1.9441, 30.0619]}
                             zoom={13}
                             scrollWheelZoom={false}
@@ -133,7 +133,7 @@ export default function ContactPage() {
                                     </Popup>
                                 </Marker>
                             ))}
-                        </MapContainer>
+                        </MapContainer> */}
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4">

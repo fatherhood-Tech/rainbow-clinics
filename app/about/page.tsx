@@ -18,7 +18,7 @@ export default function About() {
   const [ref4, inView4] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
         <div className="absolute inset-0">

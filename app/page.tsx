@@ -67,7 +67,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We strive to be Rwanda's leading center of excellence in perinatal loss care, research, and advocacy, providing compassionate, multidisciplinary support to bereaved families and advancing maternal-fetal health outcomes.
+              We strive to be Rwanda&apos;s leading center of excellence in perinatal loss care, research, and advocacy, providing compassionate, multidisciplinary support to bereaved families and advancing maternal-fetal health outcomes.
             </motion.p>
             <motion.div
               className="space-y-3 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row"
@@ -235,32 +235,47 @@ export default function Home() {
         animate={servicesInView ? "visible" : "hidden"}
         variants={fadeInUp}
         transition={{ duration: 0.8 }}
-        className="py-20"
+        className="py-24 bg-gradient-to-b from-white via-sky-50 to-sky-100"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2
-            className="text-3xl font-bold text-center mb-12"
+            className="text-4xl font-extrabold text-center mb-16 text-sky-900"
             variants={fadeInUp}
           >
             Our Services
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
               {
                 title: "Prenatal Care",
-                description: "Comprehensive prenatal care and support for expecting mothers.",
-                image: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80"
+                description: "Comprehensive prenatal care and support for expecting mothers, ensuring health and well-being for both mother and baby.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z" />
+                    <path d="M12 14v-4m0 0V8m0 2h2m-2 0H8" />
+                  </svg>
+                ),
               },
               {
                 title: "Women's Health",
-                description: "Specialized care for women at every stage of life.",
-                image: "https://images.unsplash.com/photo-1509099955921-f0b4ed0c175c?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                description: "Specialized care for women at every stage of life, from adolescence through menopause and beyond.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M12 12v8m-4 0h8" />
+                  </svg>
+                ),
               },
               {
                 title: "Support Services",
-                description: "Emotional and psychological support for women's health journey.",
-                image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
-              }
+                description: "Emotional and psychological support for women and families, including counseling and community programs.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path d="M17 8a5 5 0 0 0-10 0c0 5 5 9 5 9s5-4 5-9z" />
+                    <circle cx="12" cy="8" r="2" />
+                  </svg>
+                ),
+              },
             ].map((service, index) => (
               <motion.div
                 key={index}
@@ -268,21 +283,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
+                className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-center text-center border border-sky-100 hover:-translate-y-2 transform transition-transform"
               >
-                <Card className="overflow-hidden">
-                  <div className="relative h-48">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-gray-600">{service.description}</p>
-                  </div>
-                </Card>
+                <div className="mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-sky-100 group-hover:bg-sky-200 transition-colors duration-300 shadow">
+                  <span className="text-sky-600">{service.icon}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-sky-900 mb-3">{service.title}</h3>
+                <p className="text-sky-800 text-base">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -328,7 +335,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
                 <Card className="p-6">
-                  <blockquote className="text-gray-600 mb-4">"{testimonial.quote}"</blockquote>
+                  <blockquote className="text-gray-600 mb-4">&quot;{testimonial.quote}&quot;</blockquote>
                   <p className="font-semibold">- {testimonial.author}</p>
                 </Card>
               </motion.div>

@@ -91,34 +91,52 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen">
+
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-sky-900 to-sky-800">
-        <div className="absolute inset-0 overflow-hidden">
-          <Image
-            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528"
-            alt="Maternity Care"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              Comprehensive Women's Health Services
-            </h1>
-            <p className="text-xl text-sky-100 max-w-3xl mx-auto">
-              Expert care for every stage of your pregnancy journey and beyond.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+                  <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
+                      <div className="absolute inset-0">
+                          <Image
+                              src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                              alt="African Healthcare"
+                              fill
+                              className="object-cover"
+                              priority
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                              quality={100}
+                              style={{ objectPosition: 'center' }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-r from-sky-900/90 via-sky-900/40 to-transparent"></div>
+                      </div>
+      
+                      <motion.div
+                          className="relative h-screen flex items-center"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.8 }}
+                      >
+                          <div className="mx-auto max-w-2xl px-4 text-center relative z-10 pt-16 sm:pt-0">
+      
+                              <motion.h1
+                                  className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight text-white drop-shadow-lg"
+                                  initial={{ opacity: 0, y: 20 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  transition={{ duration: 0.8, delay: 0.2 }}
+                              >
+                                  Comprehensive Women&apos;s Health Services
+                              </motion.h1>
+      
+                              <motion.p
+                                  className="text-base sm:text-lg md:text-xl text-sky-100 mb-6 sm:mb-8 leading-relaxed drop-shadow-md"
+                                  initial={{ opacity: 0, y: 20 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  transition={{ duration: 0.8, delay: 0.4 }}
+                              >
+                                  Expert care for every stage of your pregnancy journey and beyond.
+                              </motion.p>
+                          </div>
+                      </motion.div>
+                  </section>
 
       {/* Main Services Section */}
       <div className="bg-white">

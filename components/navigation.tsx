@@ -12,7 +12,7 @@ export function Navigation() {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
+    const previous = scrollY.getPrevious() ?? 0;
     if (latest > previous && latest > 150) {
       setHidden(true);
     } else {
@@ -78,15 +78,17 @@ export function Navigation() {
                 onMouseLeave={() => item.type === 'dropdown' && setIsServicesOpen(false)}
               >
                 {item.type === 'dropdown' ? (
-                  <button
-                    className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-sky-200 transition-colors duration-300 flex items-center"
-                  >
-                    {item.label}
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
+                  <Link
+                  href={item.href ?? '/services'} // makes "Services" link clickable
+                  className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-sky-200 transition-colors duration-300 flex items-center"
+                  onClick={() => setIsServicesOpen(false)} // optional: close dropdown on click
+                >
+                  {item.label}
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </Link>
                 ) : (
                   <Link
-                    href={item.href}
+                    href={item.type === 'dropdown' ? '#' : (item.href ?? '/')}
                     className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-sky-200 transition-colors duration-300"
                   >
                     {item.label}
@@ -158,7 +160,7 @@ export function Navigation() {
               ) : (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.type === 'dropdown' ? '#' : (item.href ?? '/')}
                   className="text-white hover:text-sky-200 block px-3 py-2 rounded-md text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
