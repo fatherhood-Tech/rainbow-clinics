@@ -37,7 +37,7 @@ export function Navigation() {
     // { href: "/projects/prenatal-loss", label: "Prenatal Loss Services" },
     // { href: "/projects/health-equity", label: "Health Equity" },
     { href: "/doctors", label: "Doctors" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Contact" },
   ];
 
   return (
