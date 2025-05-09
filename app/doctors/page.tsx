@@ -11,11 +11,11 @@ import { Calendar, Clock, MapPin, Phone, Mail, Star, Heart } from "lucide-react"
 
 const doctors = [
   {
-    id: "dr-marie-uwimana",
-    name: "Dr. Marie Uwimana",
-    title: "Obstetrics & Gynecology",
-    specialization: "High-Risk Pregnancy",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+    id: "dr-gashema-hertier",
+    name: "Dr. Gashema Hertier",
+    title: "Maternal-Fetal Medicine",
+    specialization: "Maternal and fetal specialist",
+    image: "./gashema.jpg",
     experience: "15+ years",
     education: "University of Rwanda Medical School",
     languages: ["English", "Kinyarwanda", "French"],
@@ -28,11 +28,11 @@ const doctors = [
     ]
   },
   {
-    id: "dr-sarah-mutesi",
-    name: "Dr. Sarah Mutesi",
-    title: "Maternal-Fetal Medicine",
+    id: "thomas-ugiruwatuma",
+    name: "Dr Thomas Ugiruwatuma",
+    title: "Gynecologist obstetrician",
     specialization: "Perinatal Loss Care",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
+    image: "thomas.jpg",
     experience: "12+ years",
     education: "University of Nairobi Medical School",
     languages: ["English", "Kinyarwanda", "Swahili"],
@@ -45,11 +45,11 @@ const doctors = [
     ]
   },
   {
-    id: "dr-jean-mugisha",
-    name: "Dr. Jean Mugisha",
+    id: "jean-pierre-bucyebucye",
+    name: "Dr. Jean Pierre Bucyebucye",
     title: "Women's Health",
     specialization: "Mental Health Support",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
+    image: "./pierre.jpg",
     experience: "10+ years",
     education: "Makerere University",
     languages: ["English", "Kinyarwanda"],
@@ -62,43 +62,9 @@ const doctors = [
     ]
   },
   {
-    id: "dr-marie-uwimana",
-    name: "Dr. Marie Uwimana",
-    title: "Obstetrics & Gynecology",
-    specialization: "High-Risk Pregnancy",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
-    experience: "15+ years",
-    education: "University of Rwanda Medical School",
-    languages: ["English", "Kinyarwanda", "French"],
-    calendlyLink: "https://calendly.com/dr-marie-uwimana",
-    expertise: [
-      "Prenatal Care",
-      "High-Risk Pregnancy Management",
-      "Fetal Medicine",
-      "Maternal Health"
-    ]
-  },
-  {
-    id: "dr-sarah-mutesi",
-    name: "Dr. Sarah Mutesi",
+    id: "dr-adolphe-karegeya",
+    name: "Dr. Adolphe Karegeya",
     title: "Maternal-Fetal Medicine",
-    specialization: "Perinatal Loss Care",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
-    experience: "12+ years",
-    education: "University of Nairobi Medical School",
-    languages: ["English", "Kinyarwanda", "Swahili"],
-    calendlyLink: "https://calendly.com/dr-sarah-mutesi",
-    expertise: [
-      "Perinatal Loss Support",
-      "Grief Counseling",
-      "Pregnancy After Loss",
-      "Family Planning"
-    ]
-  },
-  {
-    id: "dr-jean-mugisha",
-    name: "Dr. Jean Mugisha",
-    title: "Women's Health",
     specialization: "Mental Health Support",
     image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
     experience: "10+ years",
@@ -123,12 +89,13 @@ export default function Doctors() {
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[60vh] flex items-center bg-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // src="https://plus.unsplash.com/premium_photo-1664475477169-46b784084d4e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="./doctors1.jpg"
             alt="African Healthcare"
             fill
             className="object-cover"
@@ -163,7 +130,7 @@ export default function Doctors() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Schedule a consultation with our experienced healthcare professionals dedicated to women's health.
+              Schedule a consultation with our experienced healthcare professionals dedicated to women&apos;s health.
             </motion.p>
           </div>
         </motion.div>

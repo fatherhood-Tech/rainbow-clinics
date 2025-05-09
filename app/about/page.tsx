@@ -59,7 +59,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Dedicated to transforming women&apos;s healthcare in Rwanda through compassion, 
+              Dedicated to transforming women&apos;s healthcare in Rwanda through compassion,
               innovation, and community engagement.
             </motion.p>
           </div>
@@ -80,12 +80,12 @@ export default function About() {
               <motion.div variants={fadeInUp}>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Journey</h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Founded in 2020, Rwanda Perinatal Loss Projects was born from a vision to address the critical
-                  gaps in women&apos;s healthcare across Rwanda. What began as a small clinic in Kigali has
-                  grown into a network of healthcare facilities serving thousands of women annually.
+                  Founded in 2024, Rwanda Perinatal Loss Project was born from a deep commitment to supporting families experiencing pregnancy loss. 
+                  Inspired by the lack of recognition and support in society, this initiative seeks to create a safe space for grieving families 
+                  while advocating for better care and awareness.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Our founders, Dr. Marie Uwimana and Dr. Sarah Mutesi, combined their expertise in
+                  Our founder, Dr. Sentozi Adolphe, with his expertise in
                   obstetrics and community health to create a healthcare model that puts women&apos;s needs
                   at the center of everything we do.
                 </p>
