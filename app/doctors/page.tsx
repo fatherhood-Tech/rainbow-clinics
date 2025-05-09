@@ -32,7 +32,7 @@ const doctors = [
     name: "Dr. Gashema Hertier",
     title: "Maternal-Fetal Medicine",
     specialization: "Maternal and fetal specialist",
-    image: "gashema.jpg",
+    image: "/gashema.jpg",
     experience: "15+ years",
     education: "University of Rwanda Medical School",
     languages: ["English", "Kinyarwanda", "French"],
@@ -219,7 +219,7 @@ export default function Doctors() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Doctors?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our team of experienced healthcare professionals is dedicated to providing
-              exceptional care with a focus on women's health and well-being.
+              exceptional care with a focus on women&apos;s health and well-being.
             </p>
           </div>
 
