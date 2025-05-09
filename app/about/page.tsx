@@ -85,7 +85,7 @@ export default function About() {
                   while advocating for better care and awareness.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Our founder, Dr. Sentozi Adolphe, with his expertise in
+                  Our founder, Dr.Adolphe Karegeya, with his expertise in
                   obstetrics and community health to create a healthcare model that puts women&apos;s needs
                   at the center of everything we do.
                 </p>
