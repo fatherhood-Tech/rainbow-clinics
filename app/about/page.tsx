@@ -179,7 +179,7 @@ export default function About() {
       </motion.section>
 
       {/* Team Section */}
-      <motion.section
+      {/* <motion.section
         ref={ref3}
         initial="hidden"
         animate={inView3 ? "visible" : "hidden"}
@@ -234,7 +234,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Contact Section */}
       <motion.section

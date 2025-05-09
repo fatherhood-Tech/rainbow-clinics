@@ -11,11 +11,28 @@ import { Calendar, Clock, MapPin, Phone, Mail, Star, Heart } from "lucide-react"
 
 const doctors = [
   {
+    id: "dr-adolphe-karegeya",
+    name: "Dr. Adolphe Karegeya",
+    title: "Maternal-Fetal Medicine",
+    specialization: "Mental Health Support",
+    image: "project.jpg",
+    experience: "10+ years",
+    education: "Makerere University",
+    languages: ["English", "Kinyarwanda"],
+    calendlyLink: "https://calendly.com/dr-jean-mugisha",
+    expertise: [
+      "Mental Health Support",
+      "Pregnancy Counseling",
+      "Postpartum Care",
+      "Anxiety & Depression Management"
+    ]
+  },
+  {
     id: "dr-gashema-hertier",
     name: "Dr. Gashema Hertier",
     title: "Maternal-Fetal Medicine",
     specialization: "Maternal and fetal specialist",
-    image: "./gashema.jpg",
+    image: "gashema.jpg",
     experience: "15+ years",
     education: "University of Rwanda Medical School",
     languages: ["English", "Kinyarwanda", "French"],
@@ -49,24 +66,7 @@ const doctors = [
     name: "Dr. Jean Pierre Bucyebucye",
     title: "Women's Health",
     specialization: "Mental Health Support",
-    image: "./pierre.jpg",
-    experience: "10+ years",
-    education: "Makerere University",
-    languages: ["English", "Kinyarwanda"],
-    calendlyLink: "https://calendly.com/dr-jean-mugisha",
-    expertise: [
-      "Mental Health Support",
-      "Pregnancy Counseling",
-      "Postpartum Care",
-      "Anxiety & Depression Management"
-    ]
-  },
-  {
-    id: "dr-adolphe-karegeya",
-    name: "Dr. Adolphe Karegeya",
-    title: "Maternal-Fetal Medicine",
-    specialization: "Mental Health Support",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7",
+    image: "pierre.jpg",
     experience: "10+ years",
     education: "Makerere University",
     languages: ["English", "Kinyarwanda"],
@@ -143,11 +143,10 @@ export default function Doctors() {
             {doctors.map((doctor, index) => (
               <motion.div
                 key={doctor.id}
-                ref={ref1}
-                initial="hidden"
-                animate={inView1 ? "visible" : "hidden"}
-                variants={fadeInUp}
-                transition={{ delay: index * 0.1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }} // Triggers earlier
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative h-64">
